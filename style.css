@@ -55,14 +55,14 @@ p {
     font-family: 'droid', Arial, serif ;
     margin : 10px auto ;
 }
-#Uk {
+#France {
     position : absolute ;
     right : 10px ;
-    background : url('Images/ukflag.jpg') no-repeat top left ;
+    background : url('Images/france.jpg') no-repeat top left ;
     width : 40px ;
     height : 30px ;
 }
-#Uk:hover {
+#France:hover {
     right : 8px ;
 }
 nav {
