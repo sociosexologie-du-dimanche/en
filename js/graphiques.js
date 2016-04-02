@@ -2,19 +2,20 @@
     $(function() {
   $('#couple').highcharts({
     chart: {
-      type: 'bar'
+        type: 'bar',
+        backgroundColor : null
     },
     colors: ['#CBA148', '#107671', '#004C59'],
     title: {
       text: 'Stacked bar chart'
     },
     xAxis: {
-      categories: ['En couple cohabitant', 'En couple non cohabitant', 'Célibataire ayant déjà été en couple', 'Célibataire n\'ayant jamais été en couple']
+      categories: ['Living together couple', 'Living apart couple', 'Not in a couple but has been', 'Has never been in a couple']
     },
     yAxis: {
       min: 0,
       title: {
-        text: 'Pourcentage (%)'
+        text: 'Percentage (%)'
       }
     },
     tooltip: {
@@ -29,11 +30,11 @@
       }
     },
     series: [{
-      name: 'Pas du tout satisfait',
+      name: 'Not at all satisfied',
       data: [5, 3, 19, 16]
 
     }, {
-      name: 'Peu satisfait',
+      name: 'Little satisfied',
       data: [16, 11, 29, 29]
     }]
   });
@@ -42,9 +43,9 @@
 // Gauge
 (function(){
     
-var legend1 = "<span style='font-weight:100'>Un peu</span>",
-    legend2 = "<span style='font-weight:100'>Beaucoup</span>",
-    legend3 = "<span style='font-weight:100'>Pas du <br/>tout</span>";
+var legend1 = "<span style='font-weight:100'>A little</span>",
+    legend2 = "<span style='font-weight:100'>A lot</span>",
+    legend3 = "<span style='font-weight:100'>Not at<br/> all</span>";
 
 
 
@@ -150,7 +151,7 @@ $(function () {
         },
 
         series: [{
-            name: '(hommes) <br/><b>Un peu :</b>',
+            name: '(men) <br/><b>a little :</b>',
             borderColor:Highcharts.getOptions().colors[0],
             data: [{
                 color: Highcharts.getOptions().colors[0],
@@ -159,7 +160,7 @@ $(function () {
                 y: 40
             }]
         }, {
-            name: '(femmes) <br/><b>Un peu :</b>',
+            name: '(women) <br/><b>a little :</b>',
             borderColor:Highcharts.getOptions().colors[0],
             data: [{
                 color: Highcharts.getOptions().colors[0],
@@ -168,7 +169,7 @@ $(function () {
                 y: 51
             }]
         } , {
-            name: '(hommes) <br/><b>Beaucoup :</b>',
+            name: '(men) <br/><b>a lot :</b>',
             borderColor:Highcharts.getOptions().colors[1],
             data: [{
                 color: Highcharts.getOptions().colors[1],
@@ -177,7 +178,7 @@ $(function () {
                 y: 49
             }]
         }, {
-            name: '(femmes) <br/><b>Beaucoup :</b>',
+            name: '(women) <br/><b>a lot :</b>',
             borderColor:Highcharts.getOptions().colors[1],
             data: [{
                 color: Highcharts.getOptions().colors[1],
@@ -186,7 +187,7 @@ $(function () {
                 y: 36
             }]
         } , {
-            name: '(hommes) <br/><b>Pas du tout :</b>',
+            name: '(men) <br/><b>not at all :</b>',
             borderColor:Highcharts.getOptions().colors[2],
 						data: [{
                 color: Highcharts.getOptions().colors[2],
@@ -195,7 +196,7 @@ $(function () {
                 y: 11
             }]
         }, {
-            name: '(femmes) <br/><b>Pas du tout :</b>',
+            name: '(women) <br/><b>not at all :</b>',
             borderColor:Highcharts.getOptions().colors[2],
 						data: [{
                 color: Highcharts.getOptions().colors[2],
@@ -259,9 +260,9 @@ $(function () {
     $('#highchart1').highcharts({
         data: {
             columns: [
-                [null, 'Non-religieux', 'Cathloiques non pratiquants', 'Autres religions','Catholiques pratiquants'], // categories
-                ["N'ont jamais sucé ou léché le sexe de leur partenaire", 11, 12, 21,23], // first series
-                ["N'ont jamais sodomisé leur partenaire", 45, 47, 45,63] // second series
+                [null, 'Non religious people', 'non attending catholic', 'other religious people','attending catholic'], // categories
+                ["Never sucked or licked his/her partner's genitals", 11, 12, 21,23], // first series
+                ["Never sodomized his/her partner", 45, 47, 45,63] // second series
             ]
         },
         colors : ['#0092B9','#004C59'],
@@ -279,7 +280,7 @@ $(function () {
         tooltip: {
             formatter: function () {
                 return '<b>' + this.series.name + ' :</b><br/>' +
-                    this.point.y + '% parmi les ' + this.point.name.toLowerCase();
+                    this.point.y + '% among ' + this.point.name.toLowerCase();
             }
         },
 
@@ -292,7 +293,8 @@ $(function () {
     $(function () {
     $('#nombre').highcharts({
         chart: {
-            type: 'bar'
+            type: 'bar',
+            backgroundColor : null
         },
              		colors: ['#004C59','#107671'],
 
@@ -300,12 +302,12 @@ $(function () {
             text: ''
         },
         xAxis: {
-            categories: ['1','Entre 2 et 3','Entre 4 et 5','Entre 6 et10','Plus de 10']
+            categories: ['1','Between 2 and 3','Between 4 and 5','Between 6 and 10','More than 10']
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Pourcentage (%)'
+                text: 'Percentage (%)'
             }
         },
         tooltip: {
@@ -320,12 +322,12 @@ $(function () {
             }
         },
         series: [ {
-            name: 'Pas du tout satisfait',
+            name: 'Not at all satisfied',
             data: [7,10,9,9,9]
      
         },
         {
-            name: 'Peu satisfait',
+            name: 'Little satisfied',
             data: [18,18,21,20,20]
         }]
     });
@@ -333,10 +335,12 @@ $(function () {
 })();
 
 //Polsodo
-(function(){
     $(function () {
     $('#polsodo').highcharts({ 
-     		colors: ['#CBA148', '#107671', '#004C59'],
+        chart : {
+            backgroundColor : null
+        },
+        colors: ['#CBA148', '#107671', '#004C59'],
         title: {
             text: '',
             x: -20 //center
@@ -347,12 +351,12 @@ $(function () {
         },
         yAxis: {
             title: {
-                text: 'Pourcentage (%)'
+                text: 'Percentage (%)'
             },
              tooltip: {
             formatter: function () {
                 return '<b>' + this.series.name + ' :</b><br/>' +
-                    this.point.y + '% parmi les ' + this.point.name.toLowerCase();
+                    this.point.y + '% among ' + this.point.name.toLowerCase();
             }
         },
         
@@ -372,15 +376,15 @@ $(function () {
             borderWidth: 0
         },
         series: [{
-            name: 'Ont déjà eu une relation sexuelle avec plus de deux personnes en même temps',
+            name: 'Have had sex with more than two people at the same time',
             data: [22, 17, 16, 13, 14, 21],
             visible : false
         }, {
-            name: 'Ont déjà eu une relation homosexuelle',
+            name: 'Have had an homosexual sex intercourse',
             data: [16, 15, 18, 11, 10, 15],
             visible : false
         }, {
-            name: 'Ont déjà pratiqué la pénétration anale',
+            name: 'Has performed anal sex',
             data: [55, 53, 51, 49, 50, 57]
             
         }]
@@ -390,15 +394,13 @@ $(function () {
 });
 
 
-})();
-
 // Treemap
-(function(){
     $(function () {
     $('#treemap').highcharts({
     		chart : {
-        	type : 'treemap'
-        },
+        	   type : 'treemap',
+                backgroundColor : null
+            },
     		plotOptions : {
         	treemap : {
 							allowDrillToNode : true,
@@ -447,49 +449,49 @@ $(function () {
             }],
             data: [{
                 id: 'D',
-                name: 'Supérieur au bac',
+                name: 'Graduated from college',
             }, {
                 id: 'R',
-                name: 'Inférieur au bac',
+                name: 'Did not graduated from college',
             },{
             		id: 'DH',
-                name: 'Hommes',
+                name: 'Men',
                 parent : 'D'
             }, {
             		id: 'DF',
-                name: 'Femmes',
+                name: 'Women',
                 parent : 'D'
             },{
-                name: 'Souvent : 48%',
+                name: 'Often : 48%',
                 parent: 'DH',
                 color : '#107671',
                 value: 78.7,
                   dataLabels :{
-                format : "Souvent"
+                format : "Often"
                 }
             },{
-            		name : 'Jamais : 13%',
+            		name : 'Never : 13%',
                 parent: 'DH',
                 color : '#004C59',
                 value : 21.3,
                 dataLabels : {
-                format : "Jamais"
+                format : "Never"
                 }
             },{
-            		name : 'Souvent : 36%',
+            		name : 'Often : 36%',
                 parent: 'DF',
                 color : '#CBA148',
                 value : 72,
                   dataLabels :{
-                format : "Souvent"
+                format : "Often"
                 }
             },{
-            		name : 'Jamais : 14%',
+            		name : 'Never : 14%',
                 parent : 'DF',
                 color : '#B67823',
                 value : 28,
                 dataLabels : {
-                format : "Jamais"
+                format : "Never"
                 }
             },{
             		id: 'RH',
@@ -500,36 +502,36 @@ $(function () {
                 name: 'Femmes',
                 parent : 'R',
             },{
-                name: 'Souvent : 50%',
+                name: 'Often : 50%',
                 parent: 'RH',
   							color: '#107671',
                 value: 84.7,
                   dataLabels :{
-                format : "Souvent"
+                format : "Often"
                 }
             },{
-            		name : 'Jamais : 9%',
+            		name : 'Never : 9%',
                 parent: 'RH',   
                 color : '#004C59',
                 value : 15.3,
                 dataLabels : {
-                format : "Jamais"
+                format : "Never"
                 }
             },{
-            		name : 'Souvent : 29%',
+            		name : 'Often : 29%',
                 parent: 'RF',
                 value : 61.7,
                 color : '#CBA148',
                 dataLabels :{
-                format : "Souvent"
+                format : "Often"
                 }
             },{
-            		name : 'Jamais : 18%',
+            		name : 'Never : 18%',
                 parent : 'RF',
                 value : 38.3,
                 color : '#B67823',
                 dataLabels : {
-                format : "Jamais"
+                format : "Never"
                 }
             }],
 
@@ -539,13 +541,13 @@ $(function () {
         }
     });
 });
-})();
 
 // vieillir
     $(function () {
     $('#vieillir').highcharts({
         chart: {
-            type: 'area'
+            type: 'area',
+            backgroundColor : null
         },
         colors:['rgba(248,215,201,1)','rgba(0,146,185,0.3)','rgba(203,161,72,0.5)'],
         legend : {
@@ -555,11 +557,14 @@ $(function () {
             text: ''
         },
         xAxis: {
-            categories: ['Moins de 35 ans','Entre 35 et 50 ans','Plus de 50 ans']
+            title : {
+                text: "Age category"
+            },
+            categories: ['Less than 35','Between 35 and 50','More than 50']
         },
         yAxis: {
             title: {
-                text: "Part de la génération d'âge"
+                text: "Percentage among age category"
             },
             floor : 20
         },
@@ -581,14 +586,14 @@ $(function () {
             }
         },
         series: [{
-            name: 'Au moins deux fois par semaine',
+            name: 'At least twice a week',
             data: [33,31,21]
         },{
-            name: 'Environ une fois par semaine',
+            name: 'About once a week',
             data: [46,46,46],
             visible : false
         },{
-            name: 'Jamais',
+            name: 'Never',
             data: [21,23,33]
         }]
     });
