@@ -50,9 +50,9 @@
     toolTip.setAttribute('class','tooltip') ;
     toolTip2.setAttribute('class','tooltip') ;
     toolTipInsep.setAttribute('class','tooltip') ;
-    toolTip.innerHTML = "Un bonus se cache </br> derrière le titre..." ;
-    toolTip2.innerHTML = "Oui, ce titre est plutôt déprimant..." ;
-    toolTipInsep.innerHTML =  "Vous savez, <a href='https://fr.wikipedia.org/wiki/Inséparable' target='_blank'>ces petits perroquets</a> qui passent souvent toute leur vie avec le même partenaire." ;
+    toolTip.innerHTML = "A bonus is hidden </br> behind the title..." ;
+    toolTip2.innerHTML = "Yes, this title is rather depressing..." ;
+    toolTipInsep.innerHTML =  "You know, <a href='https://fr.wikipedia.org/wiki/Inséparable' target='_blank'>these little parrots </a> who often spend their whole life with the same partner." ;
 
     titreGaterie.appendChild(toolTip) ;
     titreSatis.appendChild(toolTip2) ;
@@ -150,10 +150,10 @@
         toolContact = document.getElementById('toolContact'),
         toolAurevoir = document.getElementById('toolAurevoir'),
         fenetreBlur = document.getElementById('fenetreBlur'),
-        texte = "<p>Toutes les images en arrière-plan </br>sont des captures d'écran </br>des (bons) films suivants, donnés par ordre d'apparition :</p>",
-        texteIfop = "<p>Les données utilisées pour réaliser ce site ont été récupérées auprès de l'<a href='http://www.ifop.com/?option=com_homepage' target='_blank'>Ifop</a>. Elles ont été recueillies lors d'une enquête menée à la demande du journal <a href='http://www.marianne.net/Cette-semaine-dans-Marianne-Les-Francais-la-politique-et-le-sexe_a238936.html' target='_blank'>Marianne</a>, dans le but d'étudier les relations entre sexualité et positionnement politique. Nous remercions l'Ifop d'avoir gracieusement mis à notre disposition les résultats de cette enquête.</p><p> Les graphiques interactifs ont été réalisés avec <a href='http://www.highcharts.com' target='_blank'>Highcharts</a>.</p>",
-        texteContact = "<p>Ce site a été réalisé dans le cadre du cours de visualisation de données de l'<a href='http://www.ensae.fr' target='_blank'>Ensae ParisTech</a>. Vous pouvez nous contacter en utilisant les liens suivants, ou <a href='mailto:sociosexologuesdudimanche@ntymail.com?Subject=A%20propos%20de%20votre%20site%20de%20dataviz'>écrire à toute l'équipe en même temps !</a></p>",
-        texteAurevoir = "<p>Nous remercions nos plus curieux lecteurs qui sont parvenus en bas de page (et ont eu l'idée de cliquer sur la petite croix) de leur attention. Nous remercions (encore) également l'Ifop pour la mise à disposition de ces précieuses données agrégées. Malgré tout notre sérieux travail, les résultats présentés ici ne permettent en aucun cas de tirer des liens de causalité... Non, ce n'est pas parce que vous n'avez eu qu'une relation sexuelle que vous êtes le plus satisfait dans votre cercle d'amis. Nous espérons cependant vous avoir surpris, distrait et pourquoi pas instruit !</p><p>Vous pourrez désormais clouer le bec à votre copine Odile qui essaye de vous en mettre plein la vue avec son nombre de partenaires sexuels qui dépasse la trentaine : de toute façon, c'est pas le nombre qui compte !</p><p>Il vous sera également possible de justifier vos appartenances politiques pas toujours bien vues par l'ouverture sexuelle de leurs adhérents. Ah non ! Ca, ce serait tirer de mauvaises conclusions des chiffres...</p><p>Et si vous voulez être adorable, partagez cette page avec vos amis, vos parents, vos grands-parents, vos collègues, avec Aurélie Phillipeti ou Emma Watson... ca nous donnera une bonne note !</p>",
+        texte = "<p>All the background images </br>are screenshots </br>from the following (good) movies, given by order of apparition :</p>",
+        texteIfop = "<p>The data used in this website were provided by <a href='http://www.ifop.com/?option=com_homepage' target='_blank'>Ifop</a>. They were collected during a survey ordered by the newspaper <a href='http://www.marianne.net/Cette-semaine-dans-Marianne-Les-Francais-la-politique-et-le-sexe_a238936.html' target='_blank'>Marianne</a>, in order to study the links between sexuality and political positions. We thank Ifop for having kindly put at our disposal the results from this survey. </p><p> The interactive charts were designed with <a href='http://www.highcharts.com' target='_blank'>Highcharts</a>.</p>",
+        texteContact = "<p>This website have been designed for a data visualization course from <a href='http://www.ensae.fr' target='_blank'>Ensae ParisTech</a>. You can contact us using the following links, or <a href='mailto:sociosexologuesdudimanche@ntymail.com?Subject=A%20propos%20de%20votre%20site%20de%20dataviz'> write to the whole team as well !</a></p>",
+        texteAurevoir = "<p>We thankfully acknowledge the courage of readers that went until the end of that page (and thought to click on the little cross). We (again) thank Ifop for letting us use their precious aggregated data. In spite of all the serious of our work, the results presented here DO NOT allow to draw any causality relations... No, having had only one sexual intercourse doesn't make you the most satisfied among your friends. We hope that you were surprised, diverted, and why not teached some stuff !</p><p>From now on, you will be able to shut your friend Shirley's trap, you know, the one who tries to impress you with her long list of sexual partners--at least thirty of them! In any case, it is not the number that counts! </p><p>You will also be able to justify your not always well accepted political orientation by the sexual openness of their adherents. Oh no! This would amount to drawing wrong conclusions from the data! </p><p>And if you want to be really nice, share this page with your friends, parents, grandparents, colleagues, Barack Obama or Emma Watson … which would help us get a good grade !</p>",
         films = [ {
                 nom : 'La mala educacion',
                 lien : 'http://www.imdb.com/title/tt0275491/'
@@ -181,16 +181,16 @@
             }
         ],
         contacts = [ {
-                nom : 'Celle qui a les bonnes idées',
+                nom : 'The one who has the good ideas',
                 lien : 'https://www.linkedin.com/in/marie-beigelman-955a8397'
             },{
-                nom : 'Celui qui était ultramotivé depuis le début',
+                nom : 'The one who has been super motivated from the start',
                 lien : 'https://www.linkedin.com/in/ptanneau' ,
             },{
-                nom : "Celle qui a fait preuve d'un soutien psychologique sans faille",
+                nom : "The one whose mother likes to help for english stuff",
                 lien : 'https://fr.linkedin.com/in/kim-montalibet-1a01a265' ,
             },{
-                nom :'Celui qui aime bien coder la nuit',
+                nom :'The one who likes to code at night',
                 lien : 'https://fr.linkedin.com/in/romaindamian' ,
             }
         ],
@@ -260,7 +260,7 @@
     for (i = 0,n=contacts.length;i<n;i++){
         texteContact = texteContact + "<p><a href=" + contacts[i].lien + " target='_blank'>"+contacts[i].nom+"</a></p>"
     }
-    texte = texte + "<p> Le code javascript à l'origine des spermatozoïdes baladeurs est disponible <a href='http://paperjs.org/examples/tadpoles/' target='_blank'>ici</a>.</p>" ;
+    texte = texte + "<p> The javascript code at the origin of the moving spermatozoids is available <a href='http://paperjs.org/examples/tadpoles/' target='_blank'>here</a>.</p>" ;
     toolTip.innerHTML = texte ;
     toolIfop.innerHTML = texteIfop ;
     toolContact.innerHTML = texteContact ;
@@ -283,7 +283,7 @@
  })();
 
 //ScrollTO
-			$(document).ready(function() {
+$(document).ready(function() {
 				$('.scrollTo').click( function() { // Au clic sur un élément
 					var page = $(this).attr('href'); // Page cible
 					var speed = 900; // Durée de l'animation (en ms)
@@ -300,11 +300,11 @@ var imagesCathos = document.getElementById('imagesCathos'),     // Récupératio
     imagesAthees = document.getElementById('imagesAthees'),
     chiffre = document.getElementById('chiffreInfoCathos'),     // Récupération de la div contenant les chiffres
     // Remplissage variables de texte contenant les chiffres
-    texteDepart = "Survolez les <a href='https://youtu.be/dExlgiBADhI' target='_blank' class='lienCache'>petits bonhommes</a> pour voir les chiffres !",
-    texteCathoOui = "Cathos ayant eu une expérience homo : <span class='chiffre'>12%</span>" ,
-    texteCathoNon = "Cathos n'ayant pas eu une d'expérience homo : <span class='emph'>88%</span>",
-    texteAtheeOui = "Non-religieux ayant eu une expérience homo : <span class='chiffre'>16%</span>" ,
-    texteAtheeNon = "Non-religieux n'ayant pas eu une d'expérience homo : <span class='emph'>84%</span>",
+    texteDepart = "Move the mouse over the small men to see the figures !",
+    texteCathoOui = "Catholics having had a homosexual intercourse : <span class='chiffre'>12%</span>" ,
+    texteCathoNon = "Catholics having never had a homosexual intercourse : <span class='emph'>88%</span>",
+    texteAtheeOui = "Non-religious having had a homosexual intercourse : <span class='chiffre'>16%</span>" ,
+    texteAtheeNon = "Non-religious having never had a homosexual intercourse: <span class='emph'>84%</span>",
     // HTML à insérer dans les div span pour avoir l'image
     cathoOui = "<img src='Images/cathoOui.png'/>" ,
     cathoNon = "<img src='Images/cathoNon.png'/>",
