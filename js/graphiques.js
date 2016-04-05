@@ -560,7 +560,7 @@ $(function () {
             title : {
                 text: "Age category"
             },
-            categories: ['Less than 35','Between 35 and 50','More than 50']
+            categories: ['Under 35','Between 35 and 50','More than 50']
         },
         yAxis: {
             title: {
