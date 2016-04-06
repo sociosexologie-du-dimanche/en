@@ -317,7 +317,7 @@
                 nom : 'The one who has been super motivated from the start',
                 lien : 'https://www.linkedin.com/in/ptanneau' ,
             },{
-                nom : "The one whose mother likes to help for english stuff",
+                nom : "The one whose mother likes to help for English translation",
                 lien : 'https://fr.linkedin.com/in/kim-montalibet-1a01a265' ,
             },{
                 nom :'The one who likes to code at night',
